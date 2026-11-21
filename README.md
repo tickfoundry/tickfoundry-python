@@ -6,6 +6,32 @@ Status: alpha.
 
 The code is MIT-licensed (see LICENSE). The data you download is covered by your TickFoundry plan's data licence, not by this licence.
 
+## Install
+
+The package is not on PyPI yet, so `pip install tickfoundry` does not install it. Install it from this repository instead. You need Python 3.11 or later, and git on your PATH (pip uses git to fetch the code).
+
+```
+pip install "git+https://github.com/tickfoundry/tickfoundry-python"
+```
+
+With the optional Polars and DuckDB support (or just one of the two):
+
+```
+pip install "tickfoundry[polars,duckdb] @ git+https://github.com/tickfoundry/tickfoundry-python"
+```
+
+To fix a version, pin a commit. Version 0.2.1 is commit `1edfcaa`:
+
+```
+pip install "git+https://github.com/tickfoundry/tickfoundry-python@1edfcaa5ff89998d9f6c70a94a5dedb2dccbed0f"
+```
+
+To upgrade to the latest version later:
+
+```
+pip install --upgrade "git+https://github.com/tickfoundry/tickfoundry-python"
+```
+
 ## Quick start
 
 ```python
